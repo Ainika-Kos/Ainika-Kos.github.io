@@ -780,15 +780,24 @@ textarea:focus, input:focus {
     .subscribe__heading {
         font-size: 32px;
         margin-bottom: 25px;
+        line-height: 48px;
     }
     .feature__heading {
         font-size: 28px;
+        line-height: 40px;
     }
     .feature__card__title {
         font-size: 22px;
+        line-height: 24px;
     }
+
+    .feature__card {
+        margin-bottom: 25px;
+    }
+
     .paragraph {
         font-size: 18px;
+        line-height: 24px;
     }
     .content__paragraph {
         font-weight: 500;
@@ -811,7 +820,14 @@ textarea:focus, input:focus {
     .content__paragraph--business {
         text-align: left;
         margin-bottom: 20px;
+        line-height: 36px;
     }
+
+    .content__paragraph--business {
+        line-height: 24px;
+    }
+
+
     .subscribe__button {
         padding: 18px;
     }
