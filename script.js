@@ -12,3 +12,20 @@ function scrollFunction() {
 function topFunction() {
     window.scrollTo({top:0, behavior: "smooth"})
 }
+
+const navbar = document.querySelector('.js-navbar');
+const ham = document.querySelector('.js-hamburger');
+
+function toggleHamburger() {
+    navbar.classList.toggle('showNav')
+    ham.classList.toggle('showClose')
+    console.log('clicked')
+}
+
+ham.addEventListener('click', toggleHamburger);
+
+const nav_items = document.querySelectorAll('.js-navbar__item');
+
+nav_items.forEach(function(nav_item) {
+    nav_item.addEventListener('click', toggleHamburger)
+})
