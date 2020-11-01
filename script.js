@@ -7,7 +7,7 @@ function clickHandler(e) {
     const href = this.getAttribute("href");
     const offsetTop = document.querySelector(href).offsetTop;
     scroll({
-        top: offsetTop +30,
+        top: offsetTop,
         behavior: "smooth"
     })
 }
