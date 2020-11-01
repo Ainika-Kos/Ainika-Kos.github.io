@@ -34,6 +34,7 @@ button:hover {
 }
 
 .hamburger {
+    display: block;
     background-color: transparent;
     border: none;
     position: absolute;
@@ -55,9 +56,7 @@ button:hover {
     height: 45vh;
     overflow: hidden;
     border-radius: 0 0 0 16px;
-    /* hide the menu above the screen by default */
     transform: translateY(-110%);
-    /* transition adds a little animation when sliding in and out the menu */
     transition: transform 0.2s ease;
 }
 
@@ -83,7 +82,6 @@ button:hover {
 }
 
 .showNav {
-    /* show the menu */
     transform: translateY(0);
 }
 
@@ -117,7 +115,7 @@ button:hover {
 }
 
 .hero__shot__button-wrapper {
-    display: inline-block;
+    display: block;
 }
 
 .hero__header__button {
@@ -598,10 +596,15 @@ textarea:focus, input:focus {
     color: rgba(3, 214, 243, 1);
 }
 
-/* media bla bla bla
+@media screen and (min-width: 600px) {
 
-.hero__shot__button-wrapper {
-    display: inline;
+    .hamburger{
+        display: none;
+    }
+
+    .full_screen_nav {
+        display: block;
+    }
 }
 
-*/
+
