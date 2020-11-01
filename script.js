@@ -1,13 +1,13 @@
 const links = document.querySelectorAll("a");
 
-links.forEach(link => link.addEventListener('click', clickHandler));
+links.forEach(link => link.addEventListener("click", clickHandler));
 
 function clickHandler(e) {
     e.preventDefault();
-    const href = this.getAttribute('href');
+    const href = this.getAttribute("href");
     const offsetTop = document.querySelector(href).offsetTop;
     scroll({
-        top: offsetTop - 20,
+        top: offsetTop +30,
         behavior: "smooth"
     })
 }

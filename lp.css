@@ -13,7 +13,13 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
-a, a:hover {
+a {
+    text-decoration: none;
+    color:  rgba(3, 214, 243, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
     font-family: 'Poppins', sans-serif;
@@ -53,7 +59,7 @@ button:hover {
     right: 8px;
     background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
     width: 50vw;
-    height: 45vh;
+    height: 60vh;
     overflow: hidden;
     border-radius: 0 0 0 16px;
     transform: translateY(-110%);
@@ -329,6 +335,10 @@ button:hover {
     color: rgba(0, 0, 0, 1);
     padding: 10px;
     display: block;
+}
+
+.content__link:hover {
+    color:  rgba(3, 214, 243, 1);
 }
 
 .content__heading--business {
