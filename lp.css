@@ -72,6 +72,7 @@ button:hover {
     border: 1px solid rgba(255, 255, 255, 1);
     padding: 18px 29px;
     background-color: transparent;
+    transition: background-color, border 0.2s;
 }
 
 .hero__header__button:hover {
@@ -87,6 +88,7 @@ button:hover {
     border: 1px solid transparent;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     margin-bottom: 13px;
+    transition: background-color, color, border 0.2s;
 }
 
 .hero__shot__button--second {
@@ -193,6 +195,7 @@ button:hover {
     background-color: rgba(3, 214, 243, 1);
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border: none;
+    transition: background-color 0.2s;
 }
 
 .content__button:hover {
@@ -205,6 +208,11 @@ button:hover {
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid rgba(48, 215, 186, 1);
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    transition: color 0.2s;
+}
+
+.content__button--second:hover {
+    color:  rgba(255, 255, 255, 1);
 }
 
 .content__button--third {
@@ -238,6 +246,11 @@ button:hover {
 .content__button--business {
     margin-bottom: 13px;
     padding: 30px 85px;
+    transition: color 0.2s;
+}
+
+.content__button--business:hover {
+    color: white;
 }
 
 .pricing__heading {
@@ -341,6 +354,7 @@ button:hover {
     background-color: rgba(3, 214, 243, 1);
     border: none;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s;
 }
 
 .pricing__card__button:hover {
@@ -384,6 +398,11 @@ button:hover {
     border-radius: 7px;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+    background-color: rgba(3, 214, 243, 0.3);;
+}
+
 .subscribe__button {
     color: rgba(255, 255, 255, 1);
     padding: 18px 82px;
@@ -393,6 +412,12 @@ button:hover {
     font-weight: 500;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
+    transition: background-color, color 0.2s;
+}
+
+.subscribe__button:hover {
+    color: rgba(92, 92, 92, 1);
+    background-color: rgba(3, 214, 243, 0.3);
 }
 
 .footer {
@@ -441,6 +466,12 @@ button:hover {
     line-height: 27px;
     color: rgba(255, 255, 255, 1);
     padding: 10px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color:  rgba(3, 214, 243, 1);
+
 }
 
 .footer__icon-wrapper {
@@ -457,7 +488,6 @@ button:hover {
 
 .footer__icon:hover {
     cursor: pointer;
-    color: rgba(3, 214, 243, 1);
 }
 
 .footer__icon:first-child {
@@ -494,22 +524,21 @@ button:hover {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    background-color: rgba(255, 255, 255, 1); 
-    border: none;
+    background-color: transparent; 
+    border: 1px solid  rgba(255, 255, 255, 1); 
     font-weight: 500;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
     outline: none;
-    cursor: pointer;
     padding: 15px 40px;
-    transition: color, background-color 0.2s;
+    transition: color 0.2s;
 }
 
-.button__go-to-top:hover {
+.button__go-to-top:hover
+.button__go-to-top:active {
     outline: none;
     cursor: pointer;
-    background-color:  rgba(3, 214, 243, 1);
-    color: rgba(255, 255, 255, 1); 
+    border-radius: 16px;
 }
 
 .fa-chevron-circle-up {
