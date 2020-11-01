@@ -1,3 +1,18 @@
+const links = document.querySelectorAll("a");
+
+links.forEach(link => link.addEventListener('click', clickHandler));
+
+function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const offsetTop = document.querySelector(href).offsetTop;
+    scroll({
+        top: offsetTop - 20 ,
+        behavior: "smooth"
+    })
+}
+
+
 const mybutton = document.querySelector('.js-button');
 window.onscroll = () => scrollFunction();
 
