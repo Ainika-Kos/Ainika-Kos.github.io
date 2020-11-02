@@ -11,6 +11,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.2px;
     color: rgba(0, 0, 0, 1);
+    margin: 0;
 }
 
 a {
@@ -96,11 +97,11 @@ button:hover {
     display: none;
 }
 
-.full_screen_nav {
+.full-screen-nav {
     display: none;
 }
 
-.full_screen_nav__item {
+.full-screen-nav__item {
     font-size: 16px;
     line-height: 27px;
     color: rgba(255, 255, 255, 1);
@@ -108,11 +109,11 @@ button:hover {
     transition: color 0.2s;
 }
 
-.full_screen_nav__item:last-child {
+.full-screen-nav__item:last-child {
     margin-right: 0;
 }
 
-.full_screen_nav__item:hover {
+.full-screen-nav__item:hover {
     color: rgba(3, 214, 243, 1);
 }
 
@@ -253,7 +254,7 @@ button:hover {
     margin: 0;
 }
 
-.features__card__link {
+.feature__card__link {
     padding: 10px;
     margin: 0;
     font-size: 15px;
@@ -635,7 +636,7 @@ textarea:focus, input:focus {
     margin-bottom: 80px;
 }
 
-.button__go-to-top {
+.button-go-to-top {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -669,7 +670,7 @@ textarea:focus, input:focus {
     .hamburger {
         display: none;
     }
-    .full_screen_nav {
+    .full-screen-nav {
         display: block;
     }
     .hero__shot__heading-first {
